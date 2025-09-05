@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<form onsubmit=" return false;">
+    <input type="text" placeholder="The Password will be generated here" id="text">
+</form>
+<div class="check">
+    <label >Length <input type="number" id="length" value="6"min="4" max="20"></label>
+    <label >Numbers<input type="checkbox" id="numbers"></label>
+    <label >Symbols<input type="checkbox" id ="symbols"></label>
+    <label >Capitals letters<input type="checkbox" id="capital_letters"></label>
+    <label >Small letters<input type="checkbox" id="small_letters"></label>
+
+</div>
+<div class="gen">
+    <button type="submit" onclick="generate()">Generate</button>
+</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
